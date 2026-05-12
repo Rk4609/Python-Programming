@@ -14,23 +14,23 @@ reverseDict={1:"snake",-1:"water",0:"gun"}
 
 you= youDict[youStr]
 
-print(f"You chose {reverseDict[you]}\nwcomputer chose {reverseDict[computer]}")
+print(f"You chose {reverseDict[you]}\ncomputer chose {reverseDict[computer]}")
 
-if(computer==you):
+if(computer == you):
     print("its a draw..")
 
 else:
-    if(computer==-1 and you==1):
+    if(computer ==-1 and you == 1):
         print("You win!..")
-    elif(computer==-1 and you==0):
+    elif(computer == -1 and you == 0):
         print("You win!..")
-    elif(computer==1 and you==-1):
+    elif(computer == 1 and you == -1):
         print("You win!..")
-    elif(computer==1 and you==0):
+    elif(computer == 1 and you == 0):
         print("You win!..")
-    elif(computer==0 and you==-1):
+    elif(computer == 0 and you == -1):
         print("You win!..")
-    elif(computer==0 and you==1):
+    elif(computer == 0 and you == 1):
         print("You win!..")
 
     else:
