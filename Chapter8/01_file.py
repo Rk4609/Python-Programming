@@ -5,6 +5,19 @@ print(data)
 f.close()
 
 
+# open two files and process together
+with(
+   open("Chapter8/file.txt") as f1,
+   open("Chapter8/file1.txt") as f2):
+
+   data1= f1.read()
+   data2= f2.read()
+
+   print(data1)
+   print(data2)
+
+
+
 # The random-access memory is volatile, and all its contents are lost once a program terminates. In order to
 # persist the data forever, we use files.
 # A file is data stored in a storage device. A python program can talk to the file by reading content from it and
